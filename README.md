@@ -1,5 +1,20 @@
 # Spyyn single page app
 
+### Installing
+```sh
+npm install
+```
+
+### Developing
+```sh
+webpack -w
+```
+
+### Building
+```sh
+webpack
+```
+
 #### Notes on running
 -This app is resting heavily on github's "pages" delivery mechanism.
 Pages will deliver index.js, and deliver anything relative to that
@@ -11,3 +26,4 @@ live is what is in the gh-pages branch on github. This way, we can keep
 master as a central master repository, and gh-pages as the deploy branch
 when the time comes to deploy. This has the sweet side effect of making
 rolling back deployments trivial.
+
