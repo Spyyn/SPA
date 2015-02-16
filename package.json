@@ -24,5 +24,12 @@
   "bugs": {
     "url": "https://github.com/Spyyn/spa/issues"
   },
-  "homepage": "https://github.com/Spyyn/spa"
+  "homepage": "https://github.com/Spyyn/spa",
+  "dependencies": {
+    "webpack": "^1.5.3"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.12.2",
+    "react": "^0.12.2"
+  }
 }
