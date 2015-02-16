@@ -1,0 +1,28 @@
+{
+  "name": "spyyn_spa",
+  "version": "0.0.0",
+  "description": "the Spyyn frontend Single Page App (SPA)",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Spyyn/spa.git"
+  },
+  "keywords": [
+    "Spyyn",
+    "frontend",
+    "spa",
+    "app",
+    "single",
+    "page",
+    "react"
+  ],
+  "author": "Aaron Sullivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Spyyn/spa/issues"
+  },
+  "homepage": "https://github.com/Spyyn/spa"
+}
