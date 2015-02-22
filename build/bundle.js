@@ -21714,7 +21714,17 @@
 	var NavBar = React.createClass({
 	  displayName: 'navbar',
 	  render: function() {
-	    return (React.createElement("span", null, React.createElement("a", {href: "#"}, React.createElement("h1", null, "Spyyn")), React.createElement("nav", null, React.createElement("ul", null, React.createElement("li", null, React.createElement("a", {href: "#about"}, "about")), React.createElement("li", null, React.createElement("a", {href: "#who"}, "who are we?")))), React.createElement(RouteHandler, null)));
+	    var horizontalFlex = {
+	      display: 'flex',
+	      alignItems: 'center',
+	      flexDirection: 'row'
+	    };
+	    return (React.createElement("div", {className: "navbar"}, React.createElement("nav", {style: {
+	        display: 'flex',
+	        alignItems: 'center',
+	        flexDirection: 'row',
+	        justifyContent: 'space-between'
+	      }}, React.createElement("div", {style: horizontalFlex}, React.createElement("div", null, React.createElement("a", {href: "#"}, React.createElement("img", {src: "build/images/spyyn.gif"}))), React.createElement("div", null, React.createElement("a", {href: "#"}, React.createElement("h1", null, "Spyyn")))), React.createElement("div", {style: horizontalFlex}, React.createElement("div", null, React.createElement("a", {href: "#about"}, "about")), React.createElement("div", null, React.createElement("a", {href: "#who"}, "who are we?")))), React.createElement(RouteHandler, null)));
 	  }
 	});
 	module.exports = NavBar;
