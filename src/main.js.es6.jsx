@@ -1,14 +1,39 @@
-var React = require('react');
+var React = require('react'),
+    Router = require('react-router');
+
+var { RouteHandler, Route, Link, DefaultRoute } = Router;
 
 var Main = React.createClass({
   displayName: 'main',
   render: () => {
     return (
-      <h1>React, JSX and Harmony are all a-go-go!</h1>
-    )
+      <div>
+        <h1>Main</h1>
+
+        <RouteHandler/>
+      </div>
+    );
   }
 });
 
-var main = React.createElement(Main);
+var Child = React.createClass({
+  displayName: 'child',
+  render: () => {
+    return (
+      <div>
+        <div>child</div>
+      </div>
+    );
+  }
+});
+
+var routes = (
+  <Route path='/' handler={Main}>
+    <Route name='child' handler={Child}/>
+  </Route>
+);
+
 var containerEl = document.querySelector('#container');
-React.render(main, containerEl);
+Router.run(routes, function (Handler) {
+  React.render(<Handler/>, containerEl);
+});
