@@ -46,34 +46,27 @@
 
 	"use strict";
 	var React = __webpack_require__(1),
-	    Router = __webpack_require__(148);
+	    Router = __webpack_require__(148),
+	    NavBar = __webpack_require__(186),
+	    Who = __webpack_require__(188),
+	    About = __webpack_require__(187);
 	var $__0 = Router,
 	    RouteHandler = $__0.RouteHandler,
 	    Route = $__0.Route,
 	    Link = $__0.Link,
 	    DefaultRoute = $__0.DefaultRoute;
-	var Main = React.createClass({
-	  displayName: 'main',
-	  render: function() {
-	    return (React.createElement("div", null, React.createElement("h1", null, "Main"), React.createElement(RouteHandler, null)));
-	  }
-	});
-	var Child = React.createClass({
-	  displayName: 'child',
-	  render: function() {
-	    return (React.createElement("div", null, React.createElement("div", null, "child")));
-	  }
-	});
 	var routes = (React.createElement(Route, {
 	  path: "/",
-	  handler: Main
+	  handler: NavBar
 	}, React.createElement(Route, {
-	  name: "child",
-	  handler: Child
+	  name: "about",
+	  handler: About
+	}), React.createElement(Route, {
+	  name: "who",
+	  handler: Who
 	})));
-	var containerEl = document.querySelector('#container');
 	Router.run(routes, function(Handler) {
-	  React.render(React.createElement(Handler, null), containerEl);
+	  React.render(React.createElement(Handler, null), document.body);
 	});
 
 	//# sourceMappingURL=<compileOutput>
@@ -21704,6 +21697,75 @@
 
 	    return Utils.compact(obj);
 	};
+
+
+/***/ },
+/* 186 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var React = __webpack_require__(1),
+	    Router = __webpack_require__(148);
+	var $__0 = Router,
+	    RouteHandler = $__0.RouteHandler,
+	    Route = $__0.Route,
+	    Link = $__0.Link,
+	    DefaultRoute = $__0.DefaultRoute;
+	var NavBar = React.createClass({
+	  displayName: 'navbar',
+	  render: function() {
+	    return (React.createElement("span", null, React.createElement("a", {href: "#"}, React.createElement("h1", null, "Spyyn")), React.createElement("nav", null, React.createElement("ul", null, React.createElement("li", null, React.createElement("a", {href: "#about"}, "about")), React.createElement("li", null, React.createElement("a", {href: "#who"}, "who are we?")))), React.createElement(RouteHandler, null)));
+	  }
+	});
+	module.exports = NavBar;
+
+	//# sourceMappingURL=<compileOutput>
+
+
+/***/ },
+/* 187 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var React = __webpack_require__(1),
+	    Router = __webpack_require__(148);
+	var $__0 = Router,
+	    RouteHandler = $__0.RouteHandler,
+	    Route = $__0.Route,
+	    Link = $__0.Link,
+	    DefaultRoute = $__0.DefaultRoute;
+	var About = React.createClass({
+	  displayName: 'about',
+	  render: function() {
+	    return (React.createElement("div", null, React.createElement("div", null, "Spyyn is a thing!"), React.createElement(RouteHandler, null)));
+	  }
+	});
+	module.exports = About;
+
+	//# sourceMappingURL=<compileOutput>
+
+
+/***/ },
+/* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var React = __webpack_require__(1),
+	    Router = __webpack_require__(148);
+	var $__0 = Router,
+	    RouteHandler = $__0.RouteHandler,
+	    Route = $__0.Route,
+	    Link = $__0.Link,
+	    DefaultRoute = $__0.DefaultRoute;
+	var Who = React.createClass({
+	  displayName: 'who',
+	  render: function() {
+	    return (React.createElement("div", null, React.createElement("div", null, "We are people, not aliens!"), React.createElement(RouteHandler, null)));
+	  }
+	});
+	module.exports = Who;
+
+	//# sourceMappingURL=<compileOutput>
 
 
 /***/ }
