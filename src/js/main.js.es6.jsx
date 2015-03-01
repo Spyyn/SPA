@@ -4,6 +4,9 @@ var React = require('react'),
     Who = require('./elements/who.js.es6.jsx'),
     About = require('./elements/about.js.es6.jsx');
 
+// get that style
+require('../style/main.styl');
+
 var { RouteHandler, Route, Link, DefaultRoute } = Router;
 
 var routes = (
@@ -13,6 +16,8 @@ var routes = (
   </Route>
 );
 
+var container = document.querySelector('#container-fluid');
+
 Router.run(routes, function (Handler) {
-  React.render(<Handler/>, document.body);
+  React.render(<Handler/>, container);
 });
