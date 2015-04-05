@@ -20,3 +20,6 @@ webpack
 ```sh
 npm start
 ```
+
+#### Notes
+* We're using jerrysu's [heroku buildpack webpack](https://github.com/jerrysu/heroku-buildpack-webpack) plugin to have heroku run the webpack build on deployment.
