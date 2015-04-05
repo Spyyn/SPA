@@ -6,7 +6,8 @@ var React = require('react'),
     About = require('./elements/about.js.es6.jsx');
 
 // get that style
-require('../style/main.styl');
+// require('../style/main.styl');
+// require('/lib/css/bootstrap.min.css');
 
 var { RouteHandler, Route, Link, DefaultRoute } = Router;
 

@@ -1,5 +1,6 @@
 var React = require('react'),
-    Router = require('react-router');
+    Router = require('react-router'),
+    spyynImageUrl = require('assets/spyyn.gif');
 
 var { RouteHandler, Route, Link, DefaultRoute } = Router;
 
@@ -11,7 +12,7 @@ var NavBar = React.createClass({
           <div className='container-fluid'>
             <div className="navbar-header">
               <a className="navbar-brand" href="#">
-                <img alt="Spyyn" src="build/images/spyyn.gif"></img>
+                <img alt="Spyyn" src={spyynImageUrl}></img>
               </a>
               <a className="navbar-brand" href="#">Spyyn</a>
             </div>
