@@ -1,6 +1,5 @@
 var express = require('express');
 var path = require('path');
-// var routes = require('./src/routes/routes');
 
 process.on('uncaughtException', function (error) {
   console.error(Object.keys(error));
