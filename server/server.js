@@ -22,7 +22,7 @@ app.use(function (req, res, next) {
 });
 
 // Static pages
-app.use(express.static(path.join(__dirname, '../build')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Error
 app.use(function (error, req, res, next) {

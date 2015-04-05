@@ -10,8 +10,8 @@ module.exports = {
     }
   },
   output: {
-    path: './build/',
-    publicPath: './', // urls for images?
+    path: './public/build/',
+    publicPath: './build/', // correlates with public path in server.js
     filename: 'bundle.js'
   },
   module: {
